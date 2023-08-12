@@ -1,0 +1,37 @@
+{
+  "name": "QUEEN-X MD",
+  "description": " queen-x is improve your whatsapp exprience...",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/yureshofficial/QUEEN-X-2.0.0",
+  "stack": "container",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "openai apikey",
+      "required": false,
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "",
+      "required": true,
+      "value": ""
+    },
+    "OPENAI_ORGANIZATION": {
+      "description": "openai organisation id",
+      "required": false,
+      "value": "null"
+    }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
+}
